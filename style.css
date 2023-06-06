@@ -1,0 +1,134 @@
+/* || RESETS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+img {
+    display: block;
+}
+
+/* || VARIABLES */
+:root {
+    --SOFT-BLUE: hsl(215, 51%, 70%);
+    --CYAN: hsl(178, 100%, 50%);
+    --MAIN-BG: hsl(217, 54%, 11%);
+    --CARD-BG: hsl(216, 50%, 16%);
+    --LINE: hsl(215, 32%, 27%);
+    --WHITE: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--MAIN-BG);
+}
+
+.container {
+    background-color: var(--CARD-BG);
+    width: 270px;
+    height: 450px;
+    margin-inline: auto;
+    margin-top: 5%;
+    color: var(--WHITE);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding-left: 18px;
+    padding-right: 20px;
+}
+
+.container h1 {
+    color: var(--WHITE);
+    padding-right: 5px;
+}
+
+.container p {
+    color: var(--SOFT-BLUE);
+}
+
+.image-equilibrium {
+    width: 235px;
+    height: auto;
+    border-radius: 3px;
+    margin-inline: auto;
+    position: relative;
+    z-index: 1;
+    background-color: var(--CYAN);
+}
+
+img[alt="image-avatar"] {
+    width: 20px;
+    border: 1px ridge var(--WHITE);
+    border-radius: 50%;
+}
+
+img[alt="icon-view"] {
+    position: absolute;
+    bottom: 53%;
+    left: 47%;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left img,
+.right img {
+    padding-right: 5px;
+}
+
+.right strong {
+    color: var(--CYAN);
+}
+
+.left strong {
+    color: var(--SOFT-BLUE);
+}
+
+.left,
+.right {
+    display: flex;
+    white-space: nowrap;
+}
+
+.rule {
+    border: 1px solid var(--LINE);
+}
+
+.hr {
+    display: flex;
+}
+
+.hr img {
+    margin-right: 10px;
+}
+
+.hr span {
+    color: var(--SOFT-BLUE);
+}
+
+.hr p {
+    color: var(--WHITE);
+}
+
+img[alt="icon-view"]:hover {}
+
+.container h1:hover {
+    color: var(--CYAN);
+    cursor: pointer;
+}
+
+.image-equilibrium:hover {
+    z-index: 0;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    background-color: var(--CYAN);
+}
+
+.hr p:hover {
+    color: var(--CYAN);
+    cursor: pointer;
+}
